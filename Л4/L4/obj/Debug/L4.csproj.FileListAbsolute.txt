@@ -1,0 +1,7 @@
+C:\Users\хадарарарарара\Desktop\C#lab\Л4\L4\bin\Debug\L4.exe.config
+C:\Users\хадарарарарара\Desktop\C#lab\Л4\L4\bin\Debug\L4.exe
+C:\Users\хадарарарарара\Desktop\C#lab\Л4\L4\bin\Debug\L4.pdb
+C:\Users\хадарарарарара\Desktop\C#lab\Л4\L4\obj\Debug\L4.csproj.AssemblyReference.cache
+C:\Users\хадарарарарара\Desktop\C#lab\Л4\L4\obj\Debug\L4.csproj.CoreCompileInputs.cache
+C:\Users\хадарарарарара\Desktop\C#lab\Л4\L4\obj\Debug\L4.exe
+C:\Users\хадарарарарара\Desktop\C#lab\Л4\L4\obj\Debug\L4.pdb

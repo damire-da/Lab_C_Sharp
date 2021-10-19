@@ -1,0 +1,7 @@
+C:\Users\хадарарарарара\Desktop\C#lab\Л3\LAB3\bin\Debug\LAB3.exe.config
+C:\Users\хадарарарарара\Desktop\C#lab\Л3\LAB3\bin\Debug\LAB3.exe
+C:\Users\хадарарарарара\Desktop\C#lab\Л3\LAB3\bin\Debug\LAB3.pdb
+C:\Users\хадарарарарара\Desktop\C#lab\Л3\LAB3\obj\Debug\LAB3.csproj.AssemblyReference.cache
+C:\Users\хадарарарарара\Desktop\C#lab\Л3\LAB3\obj\Debug\LAB3.csproj.CoreCompileInputs.cache
+C:\Users\хадарарарарара\Desktop\C#lab\Л3\LAB3\obj\Debug\LAB3.exe
+C:\Users\хадарарарарара\Desktop\C#lab\Л3\LAB3\obj\Debug\LAB3.pdb

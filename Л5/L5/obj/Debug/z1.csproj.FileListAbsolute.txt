@@ -1,0 +1,7 @@
+C:\Users\хадарарарарара\Desktop\C#lab\Л5\L5\bin\Debug\L5.exe.config
+C:\Users\хадарарарарара\Desktop\C#lab\Л5\L5\bin\Debug\L5.exe
+C:\Users\хадарарарарара\Desktop\C#lab\Л5\L5\bin\Debug\L5.pdb
+C:\Users\хадарарарарара\Desktop\C#lab\Л5\L5\obj\Debug\z1.csproj.AssemblyReference.cache
+C:\Users\хадарарарарара\Desktop\C#lab\Л5\L5\obj\Debug\z1.csproj.CoreCompileInputs.cache
+C:\Users\хадарарарарара\Desktop\C#lab\Л5\L5\obj\Debug\L5.exe
+C:\Users\хадарарарарара\Desktop\C#lab\Л5\L5\obj\Debug\L5.pdb

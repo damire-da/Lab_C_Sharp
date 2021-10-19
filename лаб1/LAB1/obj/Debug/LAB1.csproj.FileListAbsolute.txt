@@ -1,0 +1,14 @@
+C:\Users\хадарарарарара\Desktop\C#lab\LAB1\bin\Debug\LAB1.exe.config
+C:\Users\хадарарарарара\Desktop\C#lab\LAB1\bin\Debug\LAB1.exe
+C:\Users\хадарарарарара\Desktop\C#lab\LAB1\bin\Debug\LAB1.pdb
+C:\Users\хадарарарарара\Desktop\C#lab\LAB1\obj\Debug\LAB1.csproj.AssemblyReference.cache
+C:\Users\хадарарарарара\Desktop\C#lab\LAB1\obj\Debug\LAB1.csproj.CoreCompileInputs.cache
+C:\Users\хадарарарарара\Desktop\C#lab\LAB1\obj\Debug\LAB1.exe
+C:\Users\хадарарарарара\Desktop\C#lab\LAB1\obj\Debug\LAB1.pdb
+C:\Users\хадарарарарара\Desktop\C#lab\лаб1\LAB1\bin\Debug\LAB1.exe.config
+C:\Users\хадарарарарара\Desktop\C#lab\лаб1\LAB1\bin\Debug\LAB1.exe
+C:\Users\хадарарарарара\Desktop\C#lab\лаб1\LAB1\bin\Debug\LAB1.pdb
+C:\Users\хадарарарарара\Desktop\C#lab\лаб1\LAB1\obj\Debug\LAB1.csproj.AssemblyReference.cache
+C:\Users\хадарарарарара\Desktop\C#lab\лаб1\LAB1\obj\Debug\LAB1.csproj.CoreCompileInputs.cache
+C:\Users\хадарарарарара\Desktop\C#lab\лаб1\LAB1\obj\Debug\LAB1.exe
+C:\Users\хадарарарарара\Desktop\C#lab\лаб1\LAB1\obj\Debug\LAB1.pdb

@@ -1,0 +1,7 @@
+C:\Users\хадарарарарара\Desktop\C#lab\L1Z2\bin\Debug\L1Z2.exe.config
+C:\Users\хадарарарарара\Desktop\C#lab\L1Z2\bin\Debug\L1Z2.exe
+C:\Users\хадарарарарара\Desktop\C#lab\L1Z2\bin\Debug\L1Z2.pdb
+C:\Users\хадарарарарара\Desktop\C#lab\L1Z2\obj\Debug\L1Z2.csproj.AssemblyReference.cache
+C:\Users\хадарарарарара\Desktop\C#lab\L1Z2\obj\Debug\L1Z2.csproj.CoreCompileInputs.cache
+C:\Users\хадарарарарара\Desktop\C#lab\L1Z2\obj\Debug\L1Z2.exe
+C:\Users\хадарарарарара\Desktop\C#lab\L1Z2\obj\Debug\L1Z2.pdb

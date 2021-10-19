@@ -1,0 +1,7 @@
+C:\Users\хадарарарарара\Desktop\C#lab\Л3\z3\bin\Debug\z23.exe.config
+C:\Users\хадарарарарара\Desktop\C#lab\Л3\z3\bin\Debug\z23.exe
+C:\Users\хадарарарарара\Desktop\C#lab\Л3\z3\bin\Debug\z23.pdb
+C:\Users\хадарарарарара\Desktop\C#lab\Л3\z3\obj\Debug\z3.csproj.AssemblyReference.cache
+C:\Users\хадарарарарара\Desktop\C#lab\Л3\z3\obj\Debug\z3.csproj.CoreCompileInputs.cache
+C:\Users\хадарарарарара\Desktop\C#lab\Л3\z3\obj\Debug\z23.exe
+C:\Users\хадарарарарара\Desktop\C#lab\Л3\z3\obj\Debug\z23.pdb
