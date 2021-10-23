@@ -15,34 +15,43 @@ namespace z2
         {
             string path = "club.txt";
             string path_2 = "club_2.txt";
-            
+            string[] types = new string[10];
             List<string> club = new List<string>();
-            StreamReader fr = new StreamReader(path);
-            StreamWriter fw = new StreamWriter(path_2);
-            while (!fr.EndOfStream)
+            try
             {
-                club.Add(fr.ReadLine());
-            }
-            string[] type = new string[5];
-            string[] team = new string[10];
-            for (int i = 0; i < club.Count; i++)
-            {
-                string[] teams = club[i].Split(' ', '.', ',', '!', '?');
-                type[i] = team[0];//массив видов спорta
-            }
-            for (int i = 0; i < type.Length; i++)
-            {
-                var clubGroups = from u in type
-                                 group u by type[i];
-                WriteLine(type[i]);
-                foreach(IGrouping<string, string> g in clubGroups)
+                StreamReader fr = new StreamReader(path);
+                StreamWriter fw = new StreamWriter(path_2, true);
+                while (!fr.EndOfStream)
                 {
-                    WriteLine(g.ElementAt(1));
+                    club.Add(fr.ReadLine());
                 }
+                for (int i = 0; i < club.Count; i++)
+                {
+                    string[] clubs = club[i].Split(' ');
+                    types[i] = clubs[1];// сохраняем виды спорта в отдельный массив
+                }
+                var type = types.Distinct().ToArray();//удаляем все повторения видов спорта
+                for (int i = 0; i < 3; i++)
+                {
+                    fw.Write($"{type[i]}:\n");
+                    for (int j = 0; j < club.Count; j++)
+                    {
+                        string[] clubs = club[j].Split(' ');
+                        if (clubs[1] == type[i])
+                        {
+                            fw.Write($"{clubs[0],10} {clubs[2],10}\n");
+                        }
+                    }
+                }
+                WriteLine("В файл записаны данные");
+                fr.Close();
+                fw.Close();
             }
+            catch (Exception e)
+            {
 
-
-            fr.Close();
+                WriteLine(e.Message);
+            }
         }
     }
 }

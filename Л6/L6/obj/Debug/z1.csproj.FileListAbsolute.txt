@@ -5,3 +5,10 @@ C:\Users\хадарарарарара\Desktop\C#lab\Л6\L6\obj\Debug\z1.csproj.A
 C:\Users\хадарарарарара\Desktop\C#lab\Л6\L6\obj\Debug\z1.csproj.CoreCompileInputs.cache
 C:\Users\хадарарарарара\Desktop\C#lab\Л6\L6\obj\Debug\L6.exe
 C:\Users\хадарарарарара\Desktop\C#lab\Л6\L6\obj\Debug\L6.pdb
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л6\L6\bin\Debug\L6.exe.config
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л6\L6\bin\Debug\L6.exe
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л6\L6\bin\Debug\L6.pdb
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л6\L6\obj\Debug\z1.csproj.AssemblyReference.cache
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л6\L6\obj\Debug\z1.csproj.CoreCompileInputs.cache
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л6\L6\obj\Debug\L6.exe
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л6\L6\obj\Debug\L6.pdb
