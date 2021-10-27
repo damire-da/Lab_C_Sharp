@@ -24,6 +24,34 @@ namespace z2
                 }
             }
             WriteLine($"Самое длинное слово: {wordd} Его длина: {k}");
+            char[] sym = s1.ToCharArray();
+            for (int i = 0; i < sym.Length; i++)
+            {
+                int tem = Convert.ToInt32(sym[i]);
+                if(tem > 96 && tem < 123)
+                {
+                    tem += k;
+                    if (tem > 123)
+                    {
+                        tem = tem % 122 + 96;
+                    }
+                    sym[i] = Convert.ToChar(tem);
+                }
+                else if(tem > 65 && tem < 91)
+                {
+                    tem += k;
+                    if (tem > 90)
+                    {
+                        tem = tem % 90 + 64;
+                    }
+                    sym[i] = Convert.ToChar(tem);
+                }
+            }
+            for (int i = 0; i < sym.Length; i++)
+            {
+                Write($"{sym[i]}");
+            }
+            WriteLine($"\nK = {k}");
             
         }
     }

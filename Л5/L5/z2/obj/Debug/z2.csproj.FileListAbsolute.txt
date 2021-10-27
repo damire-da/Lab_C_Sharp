@@ -5,3 +5,10 @@ C:\Users\хадарарарарара\Desktop\C#lab\Л5\L5\z2\obj\Debug\z2.cspro
 C:\Users\хадарарарарара\Desktop\C#lab\Л5\L5\z2\obj\Debug\z2.csproj.CoreCompileInputs.cache
 C:\Users\хадарарарарара\Desktop\C#lab\Л5\L5\z2\obj\Debug\z2.exe
 C:\Users\хадарарарарара\Desktop\C#lab\Л5\L5\z2\obj\Debug\z2.pdb
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л5\L5\z2\bin\Debug\z2.exe.config
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л5\L5\z2\bin\Debug\z2.exe
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л5\L5\z2\bin\Debug\z2.pdb
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л5\L5\z2\obj\Debug\z2.csproj.AssemblyReference.cache
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л5\L5\z2\obj\Debug\z2.csproj.CoreCompileInputs.cache
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л5\L5\z2\obj\Debug\z2.exe
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л5\L5\z2\obj\Debug\z2.pdb
