@@ -1,0 +1,7 @@
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л7\L7\bin\Debug\L7.exe.config
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л7\L7\bin\Debug\L7.exe
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л7\L7\bin\Debug\L7.pdb
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л7\L7\obj\Debug\L7.csproj.AssemblyReference.cache
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л7\L7\obj\Debug\L7.csproj.CoreCompileInputs.cache
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л7\L7\obj\Debug\L7.exe
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л7\L7\obj\Debug\L7.pdb
