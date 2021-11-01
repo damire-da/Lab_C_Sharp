@@ -42,7 +42,7 @@ namespace L7
 
         private DateTime _birthday;
 
-        public DateTime MyProperty
+        public DateTime Birthday
         {
             get { return _birthday; }
             set { _birthday = value; }

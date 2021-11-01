@@ -70,6 +70,17 @@ namespace L7
                 return average_grade/Exam.Length;
             }
         }
+        
+        public bool this[Education education]
+        {
+            get 
+            {
+                if (this.education == education) return true;
+                else return false;
+            }
+        }
+
+
         //methods
         // как сделать?
         public void AddExam(params Exam[] exam)
