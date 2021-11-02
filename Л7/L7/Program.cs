@@ -67,6 +67,10 @@ namespace L7
             Console.WriteLine(student_0[L7.Education.Bachelor]);
             Console.WriteLine(student_0[L7.Education.Specialist]);
 
+            // добавление экзамена
+            student_0.AddExam(new Exam("Duetch", 5, new DateTime(2021, 1, 20)));
+            Console.WriteLine(student_0.ToString());
+
         }
     }
 }

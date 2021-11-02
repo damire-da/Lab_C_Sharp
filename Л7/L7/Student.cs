@@ -82,16 +82,18 @@ namespace L7
 
 
         //methods
-        // как сделать?
+        // один экзамен можно добавить, но несколько ещё нет...
         public void AddExam(params Exam[] exam)
         {
             Exam[] newArray = new Exam[exams.Length + 1];
 
-            newArray[exams.Length+1] = exam[0]; 
-            for (int i = 0; i < exam.Length+1; i++)
+             
+            for (int i = 0; i < exams.Length; i++)
             {
-                newArray[i] = exam[i];
+                newArray[i] = exams[i];
             }
+            newArray[exams.Length] = exam[0];
+            Exam = newArray;
         }
 
         public override string ToString()
