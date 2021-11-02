@@ -85,14 +85,19 @@ namespace L7
         // один экзамен можно добавить, но несколько ещё нет...
         public void AddExam(params Exam[] exam)
         {
-            Exam[] newArray = new Exam[exams.Length + 1];
+            Exam[] newArray = new Exam[exams.Length + exam.Length];
 
              
             for (int i = 0; i < exams.Length; i++)
             {
                 newArray[i] = exams[i];
             }
-            newArray[exams.Length] = exam[0];
+            int j = exams.Length-1;
+            for (int i = 0; i < exam.Length; i++)
+            {
+                newArray[j] = exam[i];
+                j++;
+            }
             Exam = newArray;
         }
 
