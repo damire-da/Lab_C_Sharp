@@ -50,11 +50,11 @@ namespace L7
             set { group = value; }
         }
         
-        private Exam[] exams;
+        private Exam[] exam;
         public Exam[] Exam
         {
-            get { return exams; }
-            set { exams = value; }
+            get { return exam; }
+            set { exam = value; }
         }
 
         private double average_grade;
@@ -82,17 +82,16 @@ namespace L7
 
 
         //methods
-        // один экзамен можно добавить, но несколько ещё нет...
         public void AddExam(params Exam[] exam)
         {
-            Exam[] newArray = new Exam[exams.Length + exam.Length];
+            Exam[] newArray = new Exam[this.exam.Length + exam.Length];
 
              
-            for (int i = 0; i < exams.Length; i++)
+            for (int i = 0; i < this.exam.Length; i++)
             {
-                newArray[i] = exams[i];
+                newArray[i] = this.exam[i];
             }
-            int j = exams.Length-1;
+            int j = this.exam.Length;
             for (int i = 0; i < exam.Length; i++)
             {
                 newArray[j] = exam[i];
@@ -104,9 +103,9 @@ namespace L7
         public override string ToString()
         {
             string s = $"{person.ToString()} {group} {education}";
-            for (int i = 0; i < exams.Length; i++)
+            for (int i = 0; i < exam.Length; i++)
             {
-                s += $" {exams[i]}";
+                s += $" {exam[i]}";
             }
             return s;
         }
