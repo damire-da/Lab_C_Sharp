@@ -8,27 +8,32 @@ namespace L8
 {
     class Set
     {
+        
         private int count;
         private int[] elements;
         // constructs
         public Set()
         {
+            Console.WriteLine("Enter the size of the array");
             count = Convert.ToInt32(Console.ReadLine());
+            elements = new int[count];
             //вызов метода для заполнения массива
             Fill();
         }
 
         public Set(int[] elements)
         {
+            this.elements = new int[elements.Length];
+            count = elements.Length;
             for (int i = 0; i < elements.Length; i++)
             {
                 this.elements[i] = elements[i];
             }
         }
         // methods
-        public void Fill()
+        private void Fill()
         {
-            Console.WriteLine($"enter the value for array with size {elements.Length}: ");
+            Console.WriteLine($"Enter values for the array size {count}: ");
             for (int i = 0; i < count; i++)
             {
                 elements[i] = Convert.ToInt32(Console.ReadLine());
@@ -47,19 +52,18 @@ namespace L8
 
         public void ShowSet()
         {
+            Console.WriteLine("Array:");
             for (int i = 0; i < elements.Length; i++)
             {
                 Console.Write($"{elements[i]}\t");
-                
             }
-            
+            Console.WriteLine();
         }
 
         public void Add(int NewValue)
         {
             Array.Resize(ref elements, elements.Length + 1);
             elements[elements.Length - 1] = NewValue;
-            
         }
 
         // indexer
@@ -72,11 +76,13 @@ namespace L8
         //increment
         public static Set operator ++(Set set1) 
         {
+            int[] elements = new int[set1.elements.Length];
             for (int i = 0; i < set1.elements.Length; i++)
             {
-                set1.elements[i]++;
+                elements[i] =  set1.elements[i]++;
             }
-            return new Set { elements = set1.elements };
+
+            return new Set(elements);
         }
         //unification
         public static Set operator +(Set set1, Set set2)
@@ -92,10 +98,26 @@ namespace L8
             
             return (Set)set1.elements.Union(set2.elements);
         }
-        //
+        // intersection
         public static Set operator *(Set set1, Set set2)
         {
-            return null;
+            return (Set)set1.elements.Intersect(set2.elements);
+        }
+        // difference
+        public static Set operator /(Set set1, Set set2)
+        {
+            return (Set)set1.elements.Except(set2.elements);
+        }
+
+        // comparison
+        public static bool operator <(Set set1, Set set2)
+        {
+            return set1.count < set2.count;
+        }
+
+        public static bool operator >(Set set1, Set set2)
+        {
+            return set1.count > set2.count;
         }
 
     }
