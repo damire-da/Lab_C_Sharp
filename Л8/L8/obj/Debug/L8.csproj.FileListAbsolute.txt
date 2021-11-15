@@ -5,3 +5,4 @@ C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л8\L8\obj\Debug
 C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л8\L8\obj\Debug\L8.csproj.CoreCompileInputs.cache
 C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л8\L8\obj\Debug\L8.exe
 C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л8\L8\obj\Debug\L8.pdb
+C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л8\L8\obj\Debug\L8.csproj.SuggestedBindingRedirects.cache

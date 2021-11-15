@@ -8,10 +8,12 @@ namespace L8
 {
     class Set
     {
-        
+        #region field
         private int count;
         private int[] elements;
-        // constructs
+        #endregion
+
+        #region constructs
         public Set()
         {
             Console.WriteLine("Enter the size of the array");
@@ -30,7 +32,9 @@ namespace L8
                 this.elements[i] = elements[i];
             }
         }
-        // methods
+        #endregion
+
+        #region methods
         private void Fill()
         {
             Console.WriteLine($"Enter values for the array size {count}: ");
@@ -65,14 +69,16 @@ namespace L8
             Array.Resize(ref elements, elements.Length + 1);
             elements[elements.Length - 1] = NewValue;
         }
+        #endregion
 
-        // indexer
+        #region indexer
         public int this[int index]
         {
             get { return elements[index]; }
         }
+        #endregion
 
-        // operator overloading
+        #region operator overloading
         //increment
         public static Set operator ++(Set set1) 
         {
@@ -87,26 +93,83 @@ namespace L8
         //unification
         public static Set operator +(Set set1, Set set2)
         {
-
-            //for (int i = 0; i < set1.elements.Length; i++)
-            //{
-            //    for (int j = 0; j < set2.elements.Length; j++)
-            //    {
-            //        if (set1.elements[i] != set2.elements[j]) set1.Add(set2.elements[j]);
-            //    }
-            //}
+            Set set3 = new Set(set1.elements);
             
-            return (Set)set1.elements.Union(set2.elements);
+            int n = 0;
+            int size = set1.elements.Length;
+            for (int i = 0; i < set2.elements.Length; i++)
+            {
+                for (int j = 0; j < set1.elements.Length; j++)
+                {
+                    if (set1.elements[j] != set2.elements[i])
+                    {
+                        n = j;
+                        continue;
+                    }
+                    else break;
+                }
+                if(n == set1.elements.Length - 1)
+                {
+                    Array.Resize(ref set3.elements, set3.elements.Length + 1);
+                    set3.elements[set3.elements.Length - 1] = set2.elements[i]; 
+                }
+            }
+
+            return set3;
         }
         // intersection
         public static Set operator *(Set set1, Set set2)
         {
-            return (Set)set1.elements.Intersect(set2.elements);
+            
+            int[] elem = new int[] { };
+            Set set3 = new Set(elem);
+            int l = 0;
+            for (int i = 0; i < set2.elements.Length; i++)
+            {
+                int n = -1;
+                for (int j = 0; j < set1.elements.Length; j++)
+                {
+                    if (set1.elements[j] == set2.elements[i])
+                    {
+                        n = j;
+                        break;
+                    }
+                    
+                }
+                if (n != set1.elements.Length && n != -1)
+                {
+                    Array.Resize(ref set3.elements, set3.elements.Length + 1);
+                    set3.elements[l] = set2.elements[i];
+                    l++;
+                }
+
+            }
+            return set3;
         }
         // difference
         public static Set operator /(Set set1, Set set2)
         {
-            return (Set)set1.elements.Except(set2.elements);
+            int[] elem = new int[] { };
+            Set set3 = new Set(elem);
+            
+            for (int i = 0; i < set1.elements.Length; i++)
+            {
+                int n = 0;
+                for (int j = 0; j < set2.elements.Length; j++)
+                {
+                    if (set1.elements[i] == set2.elements[j]) break;
+                    else
+                    {
+                        n = j;
+                    }
+                }
+                if(n == set2.elements.Length - 1)
+                {
+                    Array.Resize(ref set3.elements, set3.elements.Length + 1);
+                    set3.elements[set3.elements.Length - 1] = set1.elements[i];
+                }
+            }
+            return set3;
         }
 
         // comparison
@@ -119,6 +182,6 @@ namespace L8
         {
             return set1.count > set2.count;
         }
-
+        #endregion
     }
 }
