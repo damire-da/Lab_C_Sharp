@@ -25,7 +25,7 @@ namespace _9L
         #endregion
 
         #region properties
-        private string _first_name;
+        protected string _first_name;
 
         public string FirstName
         {
@@ -33,7 +33,7 @@ namespace _9L
             set { _first_name = value; }
         }
 
-        private string _last_name;
+        protected string _last_name;
 
         public string LastName
         {
@@ -65,35 +65,40 @@ namespace _9L
                 FirstName = FirstName, 
                 LastName = LastName,
                 Date = Date,
-
             };
         }
 
         public override bool Equals(object obj)
         {
-            if(obj is Person person)
+            if (obj is Person person)
             {
-                if (person.FirstName == FirstName && person.LastName == LastName && person.Date == Date) return true;
+                return person.FirstName == FirstName &&
+                       person.LastName == LastName &&
+                       person.Date == Date;
             }
+
             return false;
         }
 
         public override int GetHashCode()
         {
-            return ;
+            int hashcode = _first_name.GetHashCode() + _last_name.GetHashCode() + Date.GetHashCode();
+            return hashcode;
         }
         #endregion
 
         #region operator
         public static bool operator ==(Person p1, Person p2)
         {
-            if ((p1.FirstName == p2.FirstName) && (p1.LastName == p2.LastName) && (p1.Date == p2.Date)) return true;
-            return false;
+            return p1.FirstName == p2.FirstName && 
+                   p1.LastName == p2.LastName &&
+                   p1.Date == p2.Date;
         }
         public static bool operator !=(Person p1, Person p2)
         {
-            if ((p1.FirstName != p2.FirstName) || (p1.LastName != p2.LastName) || (p1.Date != p2.Date)) return true;
-            return false;
+            return p1.FirstName != p2.FirstName ||
+                   p1.LastName != p2.LastName ||
+                   p1.Date != p2.Date;
         }
         #endregion
     }

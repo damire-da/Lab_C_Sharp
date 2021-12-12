@@ -6,31 +6,44 @@ using System.Threading.Tasks;
 
 namespace _9L
 {
-    class Exam
+    class Exam : IDateAndCopy
     {
         // constructors
         public Exam(string subject, int grade, DateTime date_exam)
         {
             Subject = subject;
             Grade = grade;
-            DateExam = date_exam;
+            Date = date_exam;
         }
         public Exam()
         {
             Subject = "Mathematics";
             Grade = 5;
-            DateExam = new DateTime(2021,1,17);
+            Date = new DateTime(2021,1,17);
+
         }
 
         // properties
         public string Subject { get; set; }
         public int Grade { get; set; }
-        public DateTime DateExam { get; set; }
+        //public DateTime DateExam { get; set; }
+        public DateTime Date { get; set; }
+
 
         // methods
         public override string ToString()
         {
-            return Subject + " " + Grade + " " + DateExam.ToShortDateString();
+            return Subject + " " + Grade + " " + Date.ToShortDateString();
+        }
+
+        public object DeepCopy()
+        {
+            return new Exam
+            {
+                Subject = Subject,
+                Grade = Grade,
+                Date = Date
+            };
         }
     }
 }

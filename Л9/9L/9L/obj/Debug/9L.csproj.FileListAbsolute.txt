@@ -6,3 +6,11 @@ C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л9\9L\9L\bin\De
 C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л9\9L\9L\bin\Debug\9L.pdb
 C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л9\9L\9L\obj\Debug\9L.exe
 C:\Users\хадарарарарара\Desktop\C#lab\Lab_C_Sharp\Л9\9L\9L\obj\Debug\9L.pdb
+C:\Users\хадарарарарара\Desktop\3 семестр\C#lab\Lab_C_Sharp\Л9\9L\9L\bin\Debug\9L.exe.config
+C:\Users\хадарарарарара\Desktop\3 семестр\C#lab\Lab_C_Sharp\Л9\9L\9L\bin\Debug\9L.exe
+C:\Users\хадарарарарара\Desktop\3 семестр\C#lab\Lab_C_Sharp\Л9\9L\9L\bin\Debug\9L.pdb
+C:\Users\хадарарарарара\Desktop\3 семестр\C#lab\Lab_C_Sharp\Л9\9L\9L\obj\Debug\9L.csproj.AssemblyReference.cache
+C:\Users\хадарарарарара\Desktop\3 семестр\C#lab\Lab_C_Sharp\Л9\9L\9L\obj\Debug\9L.csproj.SuggestedBindingRedirects.cache
+C:\Users\хадарарарарара\Desktop\3 семестр\C#lab\Lab_C_Sharp\Л9\9L\9L\obj\Debug\9L.csproj.CoreCompileInputs.cache
+C:\Users\хадарарарарара\Desktop\3 семестр\C#lab\Lab_C_Sharp\Л9\9L\9L\obj\Debug\9L.exe
+C:\Users\хадарарарарара\Desktop\3 семестр\C#lab\Lab_C_Sharp\Л9\9L\9L\obj\Debug\9L.pdb

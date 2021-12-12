@@ -47,6 +47,7 @@ namespace L8
 
         public int IndexOf(int value)
         {
+            // return Array.IndexOf(elements, value);
             for (int i = 0; i < elements.Length; i++)
             {
                 if (value == elements[i]) return i;
@@ -67,6 +68,7 @@ namespace L8
         public void Add(int NewValue)
         {
             Array.Resize(ref elements, elements.Length + 1);
+            count++;
             elements[elements.Length - 1] = NewValue;
         }
         #endregion
@@ -75,6 +77,7 @@ namespace L8
         public int this[int index]
         {
             get { return elements[index]; }
+            set { elements[index] = value; }
         }
         #endregion
 
@@ -82,26 +85,26 @@ namespace L8
         //increment
         public static Set operator ++(Set set1) 
         {
-            int[] elements = new int[set1.elements.Length];
-            for (int i = 0; i < set1.elements.Length; i++)
+            int[] elements = new int[set1.count];
+            for (int i = 0; i < set1.count; i++)
             {
-                elements[i] =  set1.elements[i]++;
+                set1[i]++;
             }
-
-            return new Set(elements);
+            return set1;
         }
         //unification
         public static Set operator +(Set set1, Set set2)
         {
-            Set set3 = new Set(set1.elements);
+            /*Set set3 = new Set(set1.elements);
             
             int n = 0;
-            int size = set1.elements.Length;
+            int size = set1.count;
+            
             for (int i = 0; i < set2.elements.Length; i++)
             {
                 for (int j = 0; j < set1.elements.Length; j++)
                 {
-                    if (set1.elements[j] != set2.elements[i])
+                    if (set1[j] != set2[i])
                     {
                         n = j;
                         continue;
@@ -113,10 +116,23 @@ namespace L8
                     Array.Resize(ref set3.elements, set3.elements.Length + 1);
                     set3.elements[set3.elements.Length - 1] = set2.elements[i]; 
                 }
+            }*/
+            Set set3 = new Set(set1.elements);
+            for (int i = 0; i < set2.count; i++)
+            {
+                bool b = true;
+                for (int j = 0; j < set1.count; j++)
+                    if (set1[j] == set2[i])
+                    {
+                        b = false;
+                        break;
+                    }
+                if (b)
+                    set3.Add(set2[i]);
             }
 
-            return set3;
-        }
+                return set3;
+            }
         // intersection
         public static Set operator *(Set set1, Set set2)
         {
