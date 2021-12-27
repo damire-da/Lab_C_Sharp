@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,6 +15,7 @@ namespace _9L
         Bachelor,
         SecondEducation
     }
+    [Serializable]
     class Student : Person, IDateAndCopy
     {
         #region constructors
@@ -169,6 +172,23 @@ namespace _9L
             return $"{base.ToString()} {group} {education} {AverageGrade}";
         }
 
+        public override Student DeepCopy()
+        {
+            Student st = new Student()
+            {
+                LastName = LastName,
+                FirstName = FirstName,
+                Date = Date,
+                Education = Education,
+                Group = Group,
+                exam = exam,
+                test = test, 
+            };
+            using (MemoryStream stream = new MemoryStream())
+            {
+                Formatter s 
+            };
+        }
         public override object DeepCopy()
         {
             return new Student

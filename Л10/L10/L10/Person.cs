@@ -1,12 +1,13 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _9L
+namespace L10
 {
-    class Person : IDateAndCopy
+    public class Person : IDateAndCopy, IComparable, IComparer<Person>
     {
         #region constructors
         public Person(string first_name, string last_name, DateTime birthday)
@@ -85,6 +86,23 @@ namespace _9L
             int hashcode = _first_name.GetHashCode() + _last_name.GetHashCode() + Date.GetHashCode();
             return hashcode;
         }
+
+        public virtual int CompareTo(object obj)
+        {
+            if (obj is Person p)
+                return LastName.CompareTo(p.LastName);
+            
+            throw new AggregateException("Object is not a Person");
+        }
+
+        public int Compare(Person p1, Person p2)
+        {
+            if (p1.Date > p2.Date) return 1;
+            if (p1.Date < p2.Date) return -1;
+             
+            return 0;
+        }
+        
         #endregion
 
         #region operator
